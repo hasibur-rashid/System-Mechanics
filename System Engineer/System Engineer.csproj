@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72290030-2650-4373-BEA1-10CFF0EE53A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>System_Engineer</DefaultClrNameSpace>
+    <RootNamespace>System_Engineer</RootNamespace>
+    <AssemblyName>System Mechanic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <Utf8Output>true</Utf8Output>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AditionalTweak.xaml.cs">
+      <DependentUpon>AditionalTweak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalizationTweak.xaml.cs">
+      <DependentUpon>PersonalizationTweak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ON_OFF.xaml.cs">
+      <DependentUpon>ON_OFF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceTweak.xaml.cs">
+      <DependentUpon>PerformanceTweak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SystemInfo.cs" />
+    <Compile Include="WindowsTweak.xaml.cs">
+      <DependentUpon>WindowsTweak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NetworksTweak.xaml.cs">
+      <DependentUpon>NetworksTweak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityTweak.xaml.cs">
+      <DependentUpon>SecurityTweak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="scanButtom.xaml.cs">
+      <DependentUpon>scanButtom.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AditionalTweak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersonalizationTweak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ON_OFF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PerformanceTweak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowsTweak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NetworksTweak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SecurityTweak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="scanButtom.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Application.ico">
+      <Visible>false</Visible>
+    </None>
+    <None Include="Application\cleaner.exe" />
+    <None Include="Application\tree.exe" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1337331907_lcd_monitor.ico" />
+    <Resource Include="1337332461_application-x-desktop.ico" />
+    <Resource Include="1337333034_info-group.ico" />
+    <Resource Include="1337333352_Registry.ico" />
+    <Resource Include="1337333523_memory.ico" />
+    <Resource Include="1337333581_RAM.ico" />
+    <Resource Include="1337333596_Ram.ico" />
+    <Resource Include="1337333727_disk-manager.ico" />
+    <Resource Include="1337334640_Blue_Backup_W.ico" />
+    <Resource Include="1337334651_Green_Backup.ico" />
+    <Resource Include="1337334688_Pink_Backup_W.ico" />
+    <Resource Include="1337334966_Process-Accept.ico" />
+    <Resource Include="1337335031_Control-Panel.ico" />
+    <Resource Include="1337335048_panel_settings.ico" />
+    <Resource Include="1337349263_Firewall.ico" />
+    <Resource Include="1337349274_Database_3.ico" />
+    <Resource Include="1337397112_MS-DOS-Batch-File.ico" />
+    <Resource Include="1337397131_application-x-ms-dos-executable.ico" />
+    <Resource Include="1337397206_gnome-keyring-manager.ico" />
+    <Resource Include="ActiveX Cache Folder.png" />
+    <Resource Include="Activity Monitor.png" />
+    <Resource Include="activity_monitor.ico" />
+    <Resource Include="activity_monitor2.ico" />
+    <Resource Include="admin_shell.jpg" />
+    <Resource Include="agt_add_to_autorun_256.ico" />
+    <Resource Include="applications-internet.png" />
+    <Resource Include="audit_verify_statement_scrutiny-128.png" />
+    <Resource Include="BioHazard.png" />
+    <Resource Include="Bitlocker Encryption.png" />
+    <Resource Include="Calculator.png" />
+    <Resource Include="Capture.PNG" />
+    <Resource Include="Capture2.PNG" />
+    <Resource Include="Capture3.PNG" />
+    <Resource Include="Change Disk.png" />
+    <Resource Include="chart_accept.png" />
+    <Resource Include="Cleanmgr.png" />
+    <Resource Include="Color Management.png" />
+    <Resource Include="Control-Panel.ico" />
+    <Resource Include="Converter.png" />
+    <Resource Include="CPU-Z.png" />
+    <Resource Include="Cut.png" />
+    <Resource Include="data-center.png" />
+    <Resource Include="Defragmentation.ico" />
+    <Resource Include="defragmentation.png" />
+    <Resource Include="dell_display_front.ico" />
+    <Resource Include="desktop.png" />
+    <Resource Include="diagram-58.png" />
+    <Resource Include="Directx 10_1.png" />
+    <Resource Include="document-properties.png" />
+    <Resource Include="drive_backup.ico" />
+    <Resource Include="drive_harddisk.ico" />
+    <Resource Include="DVDROM.png" />
+    <Resource Include="email.png" />
+    <Resource Include="Entire Network.png" />
+    <Resource Include="File IP.png" />
+    <Resource Include="Firewall.ico" />
+    <Resource Include="folder_customer_512.ico" />
+    <BlendEmbeddedFont Include="Fonts\segoeui.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\28 Days Later.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <Resource Include="font.png" />
+    <Resource Include="fonts.png" />
+    <BlendEmbeddedFont Include="Fonts\Enterprise.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <Resource Include="fonts_w.png" />
+    <Resource Include="Free.png" />
+    <Resource Include="Games 3.png" />
+    <Resource Include="Games.png" />
+    <Resource Include="gconfeditor.png" />
+    <Resource Include="gear_settings_cog_preferences-128.png" />
+    <Resource Include="gear_settings_cog_preferences-256.png" />
+    <Resource Include="globe.ico" />
+    <Resource Include="go_right.png" />
+    <Resource Include="green_flag.png" />
+    <Resource Include="gtk-undelete.png" />
+    <Resource Include="Harddisk.png" />
+    <Resource Include="help3.png" />
+    <Resource Include="home0002.png" />
+    <Resource Include="hp_hdd_dock.ico" />
+    <Resource Include="ico-TeamViewer.png" />
+    <Resource Include="ico_alpha_performanceoptimizer_128x128_02.png" />
+    <Resource Include="Information.png" />
+    <Resource Include="Internet Options.png" />
+    <Resource Include="internet.png" />
+    <Resource Include="iTunes.png" />
+    <Resource Include="Keyboard2.png" />
+    <Resource Include="laptops.ico" />
+    <Resource Include="laptop_charge.ico" />
+    <Resource Include="laptop_procces.ico" />
+    <Resource Include="logo_compatible_with_windows_7.png" />
+    <Resource Include="media_seek_forward.png" />
+    <Resource Include="microphone.png" />
+    <Resource Include="Microsoft_Security_Essentials_icon.png" />
+    <Resource Include="MobilityCenter.png" />
+    <Resource Include="monitor.png" />
+    <Resource Include="My Computer.png" />
+    <Resource Include="my_documents.ico" />
+    <Resource Include="my_network_places.ico" />
+    <Resource Include="Network Service.png" />
+    <Resource Include="network.jpg" />
+    <Resource Include="network34.png" />
+    <Resource Include="network_service.png" />
+    <Resource Include="network_wireless_encrypted.png" />
+    <Resource Include="New.png" />
+    <Resource Include="note_edit.png" />
+    <Resource Include="Paint.png" />
+    <Resource Include="Portable Device.png" />
+    <Resource Include="preferences_calendar_and_tasks.ico" />
+    <Resource Include="preferences_system.ico" />
+    <Resource Include="Process-Accept.ico" />
+    <Resource Include="promotion_new.png" />
+    <Resource Include="protection.ico" />
+    <Resource Include="RAM Drive.png" />
+    <Resource Include="red_flag %282%29.png" />
+    <Resource Include="registry_256.png" />
+    <Resource Include="registry_settings_registration-128.png" />
+    <Resource Include="Remote Desktop Connection.png" />
+    <Resource Include="Remote_Desktop.png" />
+    <Resource Include="Right.png" />
+    <Resource Include="Save_Settings %281%29.png" />
+    <Resource Include="scheduled_tasks3.ico" />
+    <Resource Include="school_board %282%29.png" />
+    <Resource Include="school_board.png" />
+    <Resource Include="search.png" />
+    <Resource Include="security.png" />
+    <Resource Include="Service Manager.png" />
+    <Resource Include="setup_page_document_settings-128.png" />
+    <Resource Include="setup_page_document_settings-256.png" />
+    <Resource Include="Shortcuts.png" />
+    <Resource Include="Star 5.png" />
+    <Resource Include="start-here-gnome-skyblue.png" />
+    <Resource Include="stock-vector-screwdriver-and-wrench-on-red-and-white-arrow-nameplates-40452301%282%29.jpg" />
+    <Resource Include="stock_notes.png" />
+    <Resource Include="stock_people.png" />
+    <Resource Include="Sync Center.png" />
+    <Resource Include="system %281%29.png" />
+    <Resource Include="System.png" />
+    <Resource Include="System2.png" />
+    <Resource Include="systemmechanic_200x175.png" />
+    <Resource Include="System_preferences.png" />
+    <Resource Include="Task Manager.png" />
+    <Resource Include="teamviewer.png" />
+    <Resource Include="toolbox-graphic.png" />
+    <Resource Include="Toolbox.jpg" />
+    <Resource Include="toolbox_badge.ico" />
+    <Resource Include="Tools.png" />
+    <Resource Include="Tools2.png" />
+    <Resource Include="UMPC.png" />
+    <Resource Include="uninstall.jpg" />
+    <Resource Include="uninstaller.ico" />
+    <Resource Include="uninstaller.png" />
+    <Resource Include="usb.ico" />
+    <Resource Include="usb2.ico" />
+    <Resource Include="usb_drive.ico" />
+    <Resource Include="usb_drive6.ico" />
+    <Resource Include="usb_green.ico" />
+    <Resource Include="usb_hd.ico" />
+    <Resource Include="User 01.ico" />
+    <Resource Include="user_group.ico" />
+    <Resource Include="Vista DVD.png" />
+    <Resource Include="Volume Manager.png" />
+    <Resource Include="Windows Media Center.png" />
+    <Resource Include="Windows-7-Resource-Monitor-Icon.png" />
+    <Resource Include="windows4.png" />
+    <Resource Include="Windows7Logo.png" />
+    <Resource Include="windows_powershell_icon.png" />
+    <Resource Include="word.png" />
+    <Resource Include="Workgroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\.NETFramework\v4.0\Microsoft.Expression.Blend.WPF.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

@@ -1,0 +1,56 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="System_Engineer.scanButtom"
+	x:Name="UserControl"
+	d:DesignWidth="88" d:DesignHeight="32" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave">
+
+	<Grid x:Name="LayoutRoot">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="CommonStates">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.3"/>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="Normal">
+					<Storyboard>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="textBlock">
+							<EasingColorKeyFrame KeyTime="0" Value="#FF232222"/>
+						</ColorAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="MouseOver">
+					<Storyboard>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="textBlock">
+							<EasingColorKeyFrame KeyTime="0" Value="White"/>
+						</ColorAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Cursor)" Storyboard.TargetName="UserControl">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Cursor>Hand</Cursor>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Grid>
+			<Rectangle RadiusY="2" RadiusX="2">
+				<Rectangle.Fill>
+<!-- DefaultedBorderBrush is used to show KeyBoardFocus -->
+					<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+						<GradientStop Color="#FFFCDB39" Offset="0.0"/>
+						<GradientStop Color="#FFFEBF3E" Offset="1.0"/>
+						<GradientStop Color="#FFFDC13D" Offset="0.513"/>
+						<GradientStop Color="#FFFCD839" Offset="0.491"/>
+					</LinearGradientBrush>
+
+				</Rectangle.Fill>
+			</Rectangle>
+			<TextBlock x:Name="textBlock" Margin="28.667,3.167,19.333,4.833" TextWrapping="Wrap" FontSize="14.667" Foreground="Black" Text="Start"/>
+		</Grid>
+	</Grid>
+</UserControl>
