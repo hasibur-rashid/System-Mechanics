@@ -1,8 +1,3 @@
-<h1 align="center">
-  <br>
-  System Mechanics
-  <br>
-</h1>
 <img src="https://iamhasib.files.wordpress.com/2014/04/system-mechanic.png" align="middle" />
 
 # System Mechanics
