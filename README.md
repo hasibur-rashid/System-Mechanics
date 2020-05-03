@@ -15,13 +15,17 @@ System Mechanic is a Windows Presentation Foundation (WPF) based powerful full f
 | License | MIT |
 | Software Needed | [Microsoft Expression Blend 4](https://www.microsoft.com/en-us/download/details.aspx?id=24036)
 
-### Screenshot
+### Preview 
+
+|![](https://iamhasib.files.wordpress.com/2014/04/sm0.png)| ![](https://iamhasib.files.wordpress.com/2014/04/sm19.png)|
+| ------ | ------ |
+![](https://iamhasib.files.wordpress.com/2014/04/sm16.png) |![](https://iamhasib.files.wordpress.com/2014/04/sm7.png)|
 
 ### Installation
-  - Step 1: Install MS Expression Blend 
-  - Step 2: Open the project file by MS Expression Blend
-  - Step 3: Edit, build, run and enjoy 
+  - <strong>Step 1:</strong> Install MS Expression Blend 
+  - <strong>Step 2:</strong> Open the project file by MS Expression Blend
+  - <strong>Step 3:</strong> Edit, build, run and enjoy 
 
 ## License
 
-[MIT](LICENSE)
+System Mechanics is free software, and is released under the terms of the MIT Public License. See [MIT](LICENSE) for complete license
